@@ -1,13 +1,16 @@
-<!-- Solution 1: Inline JavaScript (JavaScript trực tiếp) -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Import JS 01</title>
+    <title>alert()</title>
   </head>
   <body>
-    <button onclick="alert('Xin chào JavaScript')">Say Hello 01</button>
+    <button onclick="sayHello()">Say Hello</button>
+    <script>
+      function sayHello() {
+        alert("Hello JavaScript");
+      }
+    </script>
   </body>
 </html>

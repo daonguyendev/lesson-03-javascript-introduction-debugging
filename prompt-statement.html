@@ -1,18 +1,16 @@
-<!-- Solution 2: Internal JavaScript (JavaScript nội tuyến) -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Import JS 02</title>
+    <title>prompt()</title>
   </head>
   <body>
-    <button onclick="helloJS()">Say Hello 02</button>
-
+    <button onclick="inputName()">Enter Name</button>
     <script>
-      function helloJS() {
-        alert("Hello JavaScript");
+      function inputName() {
+        var name = prompt("Please enter your name: ");
+        alert("Your entered name is: " + name);
       }
     </script>
   </body>

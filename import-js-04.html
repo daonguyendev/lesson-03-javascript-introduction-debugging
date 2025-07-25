@@ -1,13 +1,27 @@
-<!-- Solution 3: Inline JavaScript (javascript trực tiếp) -->
+<!-- Solution 3.2: External JavaScript (JavaScript ngoại tuyến) -->
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Import JS 04</title>
+    <title>Import JS 3.2</title>
   </head>
   <body>
-    <button onclick="alert('Xin chào Aptech')">Say Hello 04</button>
+    <button>Hello Students</button>
+    <p id="greeting">Hello World</p>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("#greeting")[0].innerHTML = "Xin chào JavaScript";
+        });
+      });
+    </script>
   </body>
 </html>

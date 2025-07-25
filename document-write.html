@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document.write()</title>
+  </head>
+  <body>
+    <button onclick="writeYourName()">Write Your Name</button>
+    <p id="name"></p>
+
+    <script>
+      function writeYourName() {
+        var name = prompt("Please enter your name: ");
+        alert("Your entered name is: " + name);
+        document.getElementById("name").innerHTML = "Your entered name is: " + name;
+      }
+    </script>
+  </body>
+</html>

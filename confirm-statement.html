@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>confirm()</title>
+  </head>
+  <body>
+    <button onclick="answerQuestion()">Answer the question</button>
+    <script>
+      function answerQuestion() {
+        var isMarried = confirm("Are you married?");
+        if (isMarried) {
+            alert("Yes");
+        } else {
+            alert("No");
+        }
+      }
+    </script>
+  </body>
+</html>
